@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1c;
+}
+
+/* fonts
+font-family: 'Oswald', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+ /* Utilities */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1440px;
+    min-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-wrap {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.red {
+    color: #fc0000;
+}
+
+
+/* Sections */
+.banner-section {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+
+.rect1-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-text {
+    position: absolute;
+    top: 280px;
+    right: 20%;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    /* border: 1px solid red; */
+}
+
+.banner-text .first-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: -55px;
+    text-align: right;
+}
+.banner-text .last-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 125px;
+    color: #fff;
+    margin: 0;
+    text-align: right;
+}
+
+.banner-text .title {
+    text-align: right;
+    margin: -30px -60px 0 0;
+    font-size: 26.409px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.136;
+    letter-spacing: 4.5px;
+    -moz-transform: matrix( 0.79481792595012,0,0,0.83607492092945,0,0);
+    -webkit-transform: matrix( 0.79481792595012,0,0,0.83607492092945,0,0);
+    -ms-transform: matrix( 0.79481792595012,0,0,0.83607492092945,0,0);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div {
+    flex-basis: 20%;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: lighter;
+    color: #fff;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+nav .nav-item a:hover {
+    color: red;
+}
+
+nav .nav-item-img:hover {
+    border-bottom: 2px solid red;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.rect2-wrap {
+    position: relative;
+}
+
+.rect2-wrap img {
+    position: absolute;
+    right: 0;
+}
+
+.nav-logo {
+    text-align: center;
+}
+/* Media queries */
+
+@media (min-height: 800px) {
+    .banner-section {
+        position: relative;
+        height: 800px;
+    }
+}
