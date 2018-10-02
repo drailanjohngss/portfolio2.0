@@ -16,8 +16,8 @@ font-family: 'Montserrat', sans-serif; */
 }
 
 .container {
-    max-width: 1440px;
-    min-width: 1300px;
+    max-width: 1600px;
+    min-width: 1400px;
     width: 100%;
     margin: 0 auto;
 }
