@@ -104,10 +104,6 @@ nav .nav-item a:hover {
     color: red;
 }
 
-nav .nav-item-img:hover {
-    border-bottom: 2px solid red;
-}
-
 nav a {
     text-decoration: none;
     color: #fff;
@@ -120,11 +116,118 @@ nav a {
 .rect2-wrap img {
     position: absolute;
     right: 0;
+    top: -150px;
+    z-index: 0;
 }
 
 .nav-logo {
     text-align: center;
 }
+
+.about-container {
+    position: relative;
+    z-index: 1;
+}
+.about-container h2, .projects-container h2 {
+    color: #ff0000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 72px;
+    margin-top: 120px;
+    margin-bottom: 0;
+    letter-spacing: 5px;
+}
+
+.about-container__body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    width: 680px;
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.tech-stacks {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.icon-wrap i{
+    font-size: 50px;
+}
+
+.column {
+    color: #fff;
+    width: 300px;
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+.column:not(:last-child){
+    border-right: 0.5px solid red;
+}
+
+.column__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.column__text {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.projects-container {
+    text-align: right;
+}
+
+.center {
+    margin: 50px 0;
+}
+
+.slick-slide{
+    width: 450px;
+}
+
+.slider__title {
+    color: #fff;
+    text-align: center;
+}
+
+.slick-track div:not(.slick-current) .slider__title,
+.slick-track div:not(.slick-current) .slider__body {
+    display: none;
+}
+
+.slick-track div:not(.slick-current) .slider-img-wrapper {
+    opacity: 0.3;
+}
+
+.slick-track {
+    height: 430px;
+}
+
+.slick-current {
+    transform: scale(1)!important;
+}
+
+.slick-slide {
+    transform: scale(0.8);
+    transition: transform 0.7s ease;
+}
+
+.slider__title {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slider__body {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
 /* Media queries */
 
 @media (min-height: 800px) {
