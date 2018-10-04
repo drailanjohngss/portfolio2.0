@@ -457,9 +457,9 @@ nav a {
 
 /* Media queries */
 
-/* @media (min-height: 800px) {
+@media (max-width: 768px) {
     .banner-section {
         position: relative;
         height: 800px;
     }
-} */
+}
