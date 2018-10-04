@@ -347,7 +347,6 @@ nav a {
     text-align: justify;
     font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 200px;
 }
 
 .contact-section {
@@ -458,9 +457,9 @@ nav a {
 
 /* Media queries */
 
-@media (min-height: 800px) {
+/* @media (min-height: 800px) {
     .banner-section {
         position: relative;
         height: 800px;
     }
-}
+} */
