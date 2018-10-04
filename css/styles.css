@@ -450,6 +450,7 @@ nav a {
     left: 50%;
     transform: translateX(-50%);
     font-size: 15px;
+    text-align: center;
 }
 
 .bsquare2-img {
