@@ -464,4 +464,21 @@ nav a {
         position: relative;
         height: 800px;
     }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        min-width: 0;
+    }
+
+    .container-wrap {
+        max-width:700px;
+        margin: 0 auto;
+    }
+
+    .latop-img-cont {
+        left: 0;
+        transform: translateX(100%);]
+    }
+
 }
