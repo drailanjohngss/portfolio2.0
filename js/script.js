@@ -22,6 +22,5 @@
         }
      });
 
-    $('.laptop-img-cont').velocity({ top: "-140px" }, { loop: true, duration: 1000 });
     $('.rect1-wrap').velocity({ top: "-10px" }, { loop: true, duration: 700 });
  });
