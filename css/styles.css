@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+    color: #fff;
+}
+
 /* fonts
 font-family: 'Oswald', sans-serif;
 font-family: 'Montserrat', sans-serif; */
