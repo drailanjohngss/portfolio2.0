@@ -466,28 +466,149 @@ nav a {
     display: none;
 }
 
-/* Media queries */
+.sp-container {
+    display: none;
+}
+
+/* Media query for smartphones/tablets */
 
 @media (max-width: 768px) {
-    .banner-section {
-        position: relative;
-        height: 800px;
-    }
-
-    .container {
+    .pc-container {
         width: 100%;
         margin: 0 auto;
-        min-width: 1200px;
+        min-width: inherit;
     }
 
     .container-wrap {
-        max-width:700px;
-        margin: 0 auto;
+        margin: 5vw;
     }
 
-    .latop-img-cont {
-        left: 0;
-        transform: translateX(100%);]
+    .banner-section {
+        position: relative;
+        /* border: 1px solid red; */
+        height: 50vh;
     }
 
+    .banner-text {
+        position: relative;
+        /* right: 50%; */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20vw;
+    }
+
+    .banner-text .first-name {
+        font-size: 8.7142vw;
+        margin-bottom: -6vw;
+        text-align: center;
+    }
+
+    .banner-text .last-name {
+        font-size: 15.9285vw;
+        text-align: center;
+    }
+
+    .banner-text .title {
+        text-align: center;
+        margin: -3vw 0 0 0;
+        font-size: 26.409px;
+    }
+
+    .about-container__body {
+        width: inherit;
+    }
+
+    .laptop-img-cont {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .big-logo-container {
+        display: none;
+    }
+
+    .tech-stacks {
+        display: block;
+    }
+    .column {
+        width: 100%;
+        padding: 1.4285vw;
+    }
+
+    .contact-section__body {
+        display: block;
+    }
+
+    .column:not(:last-child) {
+        border-right: inherit;
+    }
+
+    .see-more-btn div {
+        margin: inherit;
+    }
+
+    .resume-dl a  {
+        padding: 4vw 12vw;
+    }
+
+    .slick-slide{
+        width: 450px;
+    }
+
+    .slick-track {
+        height: 500px;
+    }
+
+    .slider-img-wrapper img {
+        width: 100%;
+    }
+
+    .slider.center > div {
+        margin-top: 15vw;
+    }
+
+    .about-container h2, .projects-container h2, .contact-title h2 {
+        text-align: center;
+    }
+
+    .talk-body {
+        width: unset;
+        right: 0;
+    }
+
+    .talk-body .talk-body__title {
+        text-align: center;
+    }
+
+    .talk-body__button {
+        font-size: 20px;
+        display: flex;
+        margin: 0 11vw;
+        justify-content: center;
+    }
+
+    .talk-body__content {
+        text-align: center;
+    }
+
+    .laptop-container {
+        height: unset;
+    }
+    .rect2-wrap img {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        z-index: 0;
+    }
+
+    .rect2-wrap {
+        display: none;
+    }
+
+    .rect1-wrap {
+        top: -50px;
+    }
 }
