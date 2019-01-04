@@ -27,6 +27,7 @@ font-family: 'Montserrat', sans-serif; */
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: absolute;
     top: 0;
 }
@@ -497,6 +498,7 @@ nav a {
         position: relative;
         /* border: 1px solid red; */
         height: unset;
+        padding-top: 80vw;
     }
 
     .banner-text {
@@ -505,6 +507,7 @@ nav a {
         left: 50%;
         transform: translateX(-50%);
         top: 20vw;
+        opacity: 0.5;
     }
 
     .banner-text .first-name {
@@ -622,9 +625,11 @@ nav a {
 
     .rect1-wrap {
         top: -110px;
+        display: none;
     }
 
     .about-wrap {
         padding-top: 40vw;
     }
+
 }
