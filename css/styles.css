@@ -21,16 +21,25 @@ font-family: 'Montserrat', sans-serif; */
     text-shadow: 2px 2px rgba(0,0,0,0.2);
 }
 
+.under-bg {
+    background-image: url('/images/rectangle-sat.png');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
 .img-responsive {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.container {
+.pc-container {
     max-width: 1600px;
     min-width: 1200px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -99,6 +108,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
 nav div {
@@ -486,7 +496,7 @@ nav a {
     .banner-section {
         position: relative;
         /* border: 1px solid red; */
-        height: 50vh;
+        height: unset;
     }
 
     .banner-text {
@@ -498,13 +508,13 @@ nav a {
     }
 
     .banner-text .first-name {
-        font-size: 8.7142vw;
+        font-size: 12.7142vw;
         margin-bottom: -6vw;
         text-align: center;
     }
 
     .banner-text .last-name {
-        font-size: 15.9285vw;
+        font-size: 20.9285vw;
         text-align: center;
     }
 
@@ -516,6 +526,7 @@ nav a {
 
     .about-container__body {
         width: inherit;
+        text-align: center;
     }
 
     .laptop-img-cont {
@@ -588,6 +599,7 @@ nav a {
         display: flex;
         margin: 0 11vw;
         justify-content: center;
+        padding: 3.7142vw 4.571vw;
     }
 
     .talk-body__content {
@@ -609,6 +621,10 @@ nav a {
     }
 
     .rect1-wrap {
-        top: -50px;
+        top: -100px;
+    }
+
+    .about-wrap {
+        padding-top: 40vw;
     }
 }

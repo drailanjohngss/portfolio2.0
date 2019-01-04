@@ -17,7 +17,7 @@
 
      var vSequence = [
        { elements: $('.bsquare2-img'), properties: 'slideDown', options: { duration: 1000, easing: 'easeOutExpo' } },
-         { elements: $('.rect2-wrap img'), properties: { top: '-10px' }, options: { loop: false, duration: 800 }}
+         { elements: $('.rect2-wrap img'), properties: { top: '-10px' }, options: { loop: true, duration: 800 }}
      ];
 
 
@@ -28,5 +28,5 @@
         }
      });
 
-    $('.rect1-wrap').velocity({ top: "-40px" }, { loop: true, duration: 800 });
+    $('.rect1-wrap').velocity({ top: "-140px" }, { loop: true, duration: 800 });
  });
