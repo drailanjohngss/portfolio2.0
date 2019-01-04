@@ -28,5 +28,5 @@
         }
      });
 
-    $('.rect1-wrap').velocity({ top: "-140px" }, { loop: true, duration: 800 });
+    $('.rect1-wrap').velocity({ top: "-100px" }, { loop: true, duration: 1000 });
  });
