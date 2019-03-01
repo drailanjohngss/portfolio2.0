@@ -1,5 +1,6 @@
 
- $(document).ready(function(){
+ $(window).load(function(){
+     $(".se-pre-con").fadeOut("slow");;
      $('.center').slick({
        centerMode: true,
        centerPadding: '60px',
