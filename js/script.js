@@ -29,4 +29,40 @@
      });
 
     $('.rect1-wrap').velocity({ top: "-100px" }, { loop: true, duration: 2000 });
+
+        var userFeed = new Instafeed({
+          get: 'user',
+          limit: 4,
+          userId: '241875566',
+          accessToken: '241875566.eace9ed.6dcc131300314526ba375f33218c9938',
+          resolution: 'low_resolution',
+          template: `
+          <div class="ig">
+            <a href="{{link}}" class="ig__link">
+              <div class="ig__header">
+                <p> <i class="fas fa-map-marked-alt"></i> {{location}} </p>
+              </div>
+              <div class="ig__img">
+                <img src="{{image}}" />
+              </div>
+              <div class="ig__footer">
+                <p> {{caption}}</p>
+              </div>
+            </a>
+          </div>
+          `,
+          after: function() {
+              // disable button if no more results to load
+              if (!this.hasNext()) {
+                  loadButton.setAttribute('disabled', 'disabled');
+              }
+          },
+    });
+    userFeed.run();
+    $('#load-more').on('click', function() {
+     $("#instafeed").fadeTo("slow", 1, function() {
+          userFeed.next();
+     });
+    });
+
  });
